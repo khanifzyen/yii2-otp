@@ -5,10 +5,10 @@
  * Time: 15:24
  */
 
-namespace sam002\otp;
+namespace khanifzyen\otp;
 
 use ParagonIE\ConstantTime\Base32;
-use sam002\otp\helpers\OtpHelper;
+use khanifzyen\otp\helpers\OtpHelper;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\validators\UrlValidator;
@@ -21,11 +21,11 @@ use yii\validators\UrlValidator;
  * ~~~
  *  'components' => [
  *      'otp' => [
- *          'class' => 'sam002\otp\Otp',
- *          'algorithm' => sam002\otp\Otp::ALGORITHM_TOTP
+ *          'class' => 'khanifzyen\otp\Otp',
+ *          'algorithm' => khanifzyen\otp\Otp::ALGORITHM_TOTP
  *          'digits' => 6,
  *          'digest' => 'sha256',
- *          'issuer' => 'sam002',
+ *          'issuer' => 'khanifzyen',
  *          'label' => 'yii2-otp',
  *          'imgLabelUrl' => Yii,
  *          'secretLength' => 16
@@ -34,8 +34,8 @@ use yii\validators\UrlValidator;
  * ]
  * ~~~
  *
- * @author Semen Dubina <sam@sam002.net>
- * @package sam002\otp
+ * @author Semen Dubina <sam@khanifzyen.net>
+ * @package khanifzyen\otp
  */
 class Otp extends Component
 {

@@ -5,7 +5,7 @@
  * Time: 4:22
  */
 
-namespace sam002\otp\widgets;
+namespace khanifzyen\otp\widgets;
 
 use BaconQrCode\Common\CharacterSetEci;
 use Da\QrCode\Contracts\ErrorCorrectionLevelInterface;
@@ -15,7 +15,7 @@ use Da\QrCode\Writer\EpsWriter;
 use Da\QrCode\Writer\JpgWriter;
 use Da\QrCode\Writer\PngWriter;
 use Da\QrCode\Writer\SvgWriter;
-use sam002\otp\Otp;
+use khanifzyen\otp\Otp;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\FileHelper;
